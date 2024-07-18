@@ -1,0 +1,50 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 2px 5px 15px rgba(128, 128, 128, 0.405);
+}
+
+.taskSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+
+.completeCheckbox {
+  cursor: pointer;
+  margin: 10px;
+  transform: scale(1.4);
+}
+.urgentBadge {
+  margin-left: 10px;
+  background-color: #fd5959a6;
+  border: 2px solid #ff0000b7;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.delete {
+  cursor: pointer;
+}
+.delete:hover {
+  opacity: 0.5;
+}
+
+.completed {
+  margin-left: 10px;
+  color: rgb(3, 185, 49);
+}
