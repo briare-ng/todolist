@@ -2,39 +2,56 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: 10px;
-  padding: 10px;
+  width: 92%;
+  margin: 10px 0px;
+  padding: 5px 10px;
   border-radius: 6px;
   box-shadow: 2px 5px 15px rgba(128, 128, 128, 0.405);
+  font-size: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .taskSection {
   display: flex;
-  justify-content: flex-start;
+  justify-content:space-between;
   align-items: center;
-  width: 70%;
+  width: 100%;
+  margin-right: 10px;
 }
-
-.completeCheckbox {
+.completeCheckbox{
+  display: flex;
+  min-width: 50%;
+  align-items: center;
+}
+.Checkbox {
   cursor: pointer;
   margin: 10px;
   transform: scale(1.4);
 }
+
+.text{ 
+}
+.rightSection{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
 .urgentBadge {
-  margin-left: 10px;
+  margin: 5px 5px;
   background-color: #fd5959a6;
   border: 2px solid #ff0000b7;
   border-radius: 20px;
-  padding: 5px 15px;
+  padding: 3px 10px;
   font-weight: 600;
 }
 
-.text {
-  font-size: 1.2em;
-  font-weight: 600;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+
+.completed {
+  text-wrap: nowrap;
+  margin: 10px;
+  color: rgb(3, 185, 49);
 }
 
 .delete {
@@ -42,9 +59,4 @@
 }
 .delete:hover {
   opacity: 0.5;
-}
-
-.completed {
-  margin-left: 10px;
-  color: rgb(3, 185, 49);
 }

@@ -46,8 +46,9 @@ function Home() {
     );
   });
 
-  return (
+  return (<>
     <div className={styles.container}>
+      <h1 className={styles.title}>Make a TO-DO list</h1>
       <div className={styles.card}>
         <div className={styles.addContainer}>
           <input
@@ -84,7 +85,7 @@ function Home() {
         {/* Conteneur des taches */}
         <div className={styles.tasksContainer}>{tasksComponents}</div>
       </div>
-    </div>
+    </div></>
   );
 }
 

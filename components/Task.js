@@ -27,22 +27,26 @@ function Task(props) {
   return (
     <div className={styles.task}>
       <div className={styles.taskSection}>
-        <input
-          type="checkbox"
-          className={styles.completeCheckbox}
-          onChange={handleComplete}
-          checked={props.completed}
-        />
-        <p className={styles.text} style={textStyle}>
-          {props.text}
-        </p>
-        {props.urgent && <span className={styles.urgentBadge}>Urgent</span>}
-        {props.completed && (
-          <span className={styles.completed}>
-            <FontAwesomeIcon icon={faCheck} />
-            &nbsp;Done !
-          </span>
-        )}
+        <div className={styles.completeCheckbox}>
+          <input
+            type="checkbox"
+            className={styles.Checkbox}
+            onChange={handleComplete}
+            checked={props.completed}
+          />
+          <p className={styles.text} style={textStyle}>
+            {props.text}
+          </p>
+        </div>
+        <div className={styles.rightSection}>
+          {props.urgent && <span className={styles.urgentBadge}>Urgent</span>}
+          {props.completed && (
+            <span className={styles.completed}>
+              <FontAwesomeIcon icon={faCheck} />
+              &nbsp;Done !
+            </span>
+          )}
+        </div>
       </div>
       <FontAwesomeIcon
         icon={faTrash}
